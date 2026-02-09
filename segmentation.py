@@ -1,10 +1,14 @@
 import cv2
+import sys
 import numpy as np
 from matplotlib import pyplot as plt
 
 # ===== Change paths here =====
-INPUT_PATH = r"C:\Users\Shaof\OneDrive\Desktop\ALHA FIB 02-2.tiff"
-OUTPUT_PATH = r"C:\Users\Shaof\OneDrive\Desktop\Olivine_Pyroxene_map_green_blue.png"
+if len(sys.argv) < 2:
+    raise ValueError("Usage: python segmentation.py image.tiff")
+
+INPUT_PATH = sys.argv[1]
+OUTPUT_PATH = INPUT_PATH.rsplit(".",1)[0] + "_segmented.png"
 
 # ===== Read image =====
 img = cv2.imread(INPUT_PATH)
@@ -152,3 +156,4 @@ plt.figure(figsize=(6,6))
 plt.imshow(cv2.cvtColor(out, cv2.COLOR_BGR2RGB))
 plt.axis("off")
 plt.show()
+
