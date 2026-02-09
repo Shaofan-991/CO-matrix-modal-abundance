@@ -1,4 +1,4 @@
-\## Pixel-based modal abundance measurement from STEM-EDS maps
+## Pixel-based modal abundance measurement from STEM-EDS maps
 
 
 
@@ -6,7 +6,7 @@ This repository contains the script used to quantify modal abundances of olivine
 
 
 
-\### Method overview
+### Method overview
 
 The false-color EDS map is segmented using pixel classification in CIE-Lab color space.  
 
@@ -24,7 +24,7 @@ The procedure produces:
 
 
 
-\### Requirements
+### Requirements
 
 Python 3.9 or newer
 
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 
 
-\### How to run
+### How to run
 
 Place your EDS map (tiff or png) in the same folder as the script, then run:
 
@@ -60,13 +60,13 @@ The output classified map will be saved automatically.
 
 
 
-\### Example
+### Example
 
 An example EDS map (`example\_map.tiff`) is provided so the workflow can be reproduced.
 
 
 
-\### Scientific purpose
+### Scientific purpose
 
 This workflow was developed to measure modal abundances of submicron olivine and pyroxene in pristine CO chondrite matrices from STEM-EDS maps.  
 
@@ -75,3 +75,4 @@ The code is provided to ensure reproducibility of the quantitative petrographic 
 ### Reproducibility
 This repository contains the exact script used to calculate modal abundances reported in the manuscript.  
 No manual outlining of grains was performed. Phase abundances were determined entirely by automated pixel classification.
+
