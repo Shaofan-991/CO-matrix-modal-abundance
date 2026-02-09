@@ -72,4 +72,6 @@ This workflow was developed to measure modal abundances of submicron olivine and
 
 The code is provided to ensure reproducibility of the quantitative petrographic measurements reported in the associated publication.
 
-
+### Reproducibility
+This repository contains the exact script used to calculate modal abundances reported in the manuscript.  
+No manual outlining of grains was performed. Phase abundances were determined entirely by automated pixel classification.
